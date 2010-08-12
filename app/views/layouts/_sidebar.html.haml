@@ -1,0 +1,4 @@
+#sideBar
+  %h4= t('application.titles.recent_posts')
+  - if @recent_posts.nil?
+    = t('application.messages.no_recent_posts')
