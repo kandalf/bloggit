@@ -1,3 +1,7 @@
+*
+  margin: 0px
+  padding: 0px
+
 body
   background-color: #fff
   color: #333
@@ -54,3 +58,84 @@ div
   ul li
     font-size: 12px
     list-style: square
+
+/********* <VARS> *********/
+!search_bar_height = 20px
+!header_height = 80px
+!header_font_size = 30px
+!header_message_font_size = 14px
+
+!side_bar_width = 18%
+!content_width = 80%
+
+!post_content_color = gray
+!post_content_font_size = 14px
+!post_title_font_size = 16px
+/********* </VARS> *********/
+
+#searchBar
+  height: !search_bar_height
+  text-align: right
+  padding: 10px 15px 5px 0px
+  font-size: 10px
+  
+  input[type='text']
+    border: solid 1px black
+  *
+    display: inline-block
+
+#header
+  height: !header_height
+  background-color: black
+  color: white
+  padding: 10px
+
+  .vSpacer
+    height: 70%
+  
+  .title, .message
+    height: 30%
+    vertical-align: bottom
+    display: inline-block
+    font-weight: bold
+  
+  .title
+    font-size: !header_font_size 
+
+  .message
+    font-size: !header_message_font_size 
+
+#contentWrapper
+  padding: 25px 5px 5px 10px
+  height: 100%
+  display: block
+
+  #content, #sideBar
+    display: inline-block
+
+  #sideBar
+    width: !side_bar_width
+    vertical-align: top
+
+  #content
+    width: !content_width
+
+    .post
+      padding: 10px
+      dl
+        dt
+          font-size: !post_title_font_size
+          font-weight: bold
+          padding-bottom: 5px
+        
+        dd
+          padding-left: 20px
+          color: !post_content_color
+          font-style: italic
+          font-size: !post_content_font_size
+
+#footer
+  height: 50px
+  background-color: black
+  color: white
+  font-size: 10px
