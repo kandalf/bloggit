@@ -2,4 +2,23 @@
 # See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  application:
+    headers:
+      posts: Posts
+      no_posts: Welcome to BloggIT!! Be The first to post!!
+
+    titles:
+      new_post: New Post
+      actions: Actions
+      search: Search
+      recent_posts: Recent Posts
+
+    actions:
+      show: Show
+      edit: Edit
+      destroy: Destroy
+
+    messages:
+      no_posts: BloggIT is waiting for YOU to be the first one to post!!<br/>Go Ahead! Write your first post and make yourself famous!!!
+      no_recent_posts: No posts has been written yet. We're SO sad.
+      copyright: AtoBiz 2010 &copy;
