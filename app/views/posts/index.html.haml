@@ -1,20 +1,9 @@
-%h1= t('.title')
-%p= link_to t('.new_post'), new_post_path
+%p= link_to t('application.titles.new_post'), new_post_path
+.post
+  - if @posts.any?
+    = render :partial => "posts/post", :collection => @posts
+  -else
+    = render :partial => "shared/no_posts"
 
-%table
-  %thead
-    %tr
-      %th= Post.human_attribute_name :name
-      %th= Post.human_attribute_name :title
-      %th= Post.human_attribute_name :content
-      %th{:colspan => 3}= t 'actions'
-  
-  %tbody
-    - for post in @posts
-      %tr{ :class => cycle(:odd, :even) }
-        %td= post.name
-        %td= post.title
-        %td= post.content
-        %td.action= link_to t('show'), post
-        %td.action= link_to t('edit'), edit_post_path(post)
-        %td.action= link_to t('destroy'), post, :confirm => t('are_you_sure'), :method => :delete
+%p= link_to t('application.titles.new_post'), new_post_path
+
