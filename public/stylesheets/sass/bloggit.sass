@@ -1,3 +1,6 @@
+@import "vars"
+@import "mixins"
+
 *
   margin: 0px
   padding: 0px
@@ -59,19 +62,6 @@ div
     font-size: 12px
     list-style: square
 
-/********* <VARS> *********/
-!search_bar_height = 20px
-!header_height = 80px
-!header_font_size = 30px
-!header_message_font_size = 14px
-
-!side_bar_width = 18%
-!content_width = 80%
-
-!post_content_color = gray
-!post_content_font_size = 14px
-!post_title_font_size = 16px
-/********* </VARS> *********/
 
 #searchBar
   height: !search_bar_height
@@ -139,3 +129,16 @@ div
   background-color: black
   color: white
   font-size: 10px
+
+.field
+  input[type='text'], input[type='password'], textarea
+    background-color: white
+    color: black
+    border: solid 2px gray
+    line-height: 18px
+    font-size: 18px
+    +border_radius(5px)
+
+.formWrapper
+  padding: 10px 0px 5px 30px
+
