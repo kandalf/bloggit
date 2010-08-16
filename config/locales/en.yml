@@ -17,8 +17,10 @@ en:
       show: Show
       edit: Edit
       destroy: Destroy
+      create: Create
 
     messages:
       no_posts: BloggIT is waiting for YOU to be the first one to post!!<br/>Go Ahead! Write your first post and make yourself famous!!!
       no_recent_posts: No posts has been written yet. We're SO sad.
       copyright: AtoBiz 2010 &copy;
+      post_created_ok: Post was created successfuly
