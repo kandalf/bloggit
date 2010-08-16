@@ -10,6 +10,13 @@
     = render :partial => "layouts/search_bar"
     = render :partial => "layouts/header"
     #contentWrapper
+      #flashNotice
+        = flash[:notice]
+      #flashWarning
+        = flash[:warning]
+      #flashError
+        = flash[:error]
+
       #content
         = yield
 
