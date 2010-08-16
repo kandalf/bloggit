@@ -32,12 +32,10 @@ Feature: Create Posts
   Scenario: User can create posts
     Given there is no posts
      When I go to the new post page
-      And I fill in "Name" with "post_name"
       And I fill in "Title" with "New Post Title"
       And I fill in "Content" with "New Post Content"
       And I click the "Create" action in the current locale
      Then I should see the "Post Created OK" message in the current locale
       And I should see "New Post Title"
       And I should see "New Post Content"
-      And I should not see "post_name"
-      And I should be on the post named "post_name" page
+      And I should be on the post named "new_post_title" page
