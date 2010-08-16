@@ -41,6 +41,7 @@ class PostsController < ApplicationController
   # POST /posts.xml
   def create
     @post = Post.new(params[:post])
+    @post.name = @post.title.downcase.gsub(" ", "_") if @post.name.nil?
 
     respond_to do |format|
       if @post.save

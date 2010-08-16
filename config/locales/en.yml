@@ -18,6 +18,7 @@ en:
       edit: Edit
       destroy: Destroy
       create: Create
+      back: Back
 
     messages:
       no_posts: BloggIT is waiting for YOU to be the first one to post!!<br/>Go Ahead! Write your first post and make yourself famous!!!
