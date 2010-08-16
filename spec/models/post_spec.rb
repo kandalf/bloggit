@@ -16,4 +16,9 @@ describe Post do
     post.should be_valid
     post.save.should be_true
   end
+
+  it "should have comments" do
+    post = Post.new(:title => "title", :name => "something")
+    post.comments.should be_empty
+  end
 end
