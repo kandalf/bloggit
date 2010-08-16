@@ -1,8 +1,8 @@
-%dl
-  %dt= post.title
-  %dd= post.content
+.post
+  %dl
+    %dt= post.title
+    %dd=raw post.content
 
 .postLinkBar
-  = link_to t('application.actions.show'), post
   = link_to t('application.actions.edit'), edit_post_path(post)
   = link_to t('application.actions.destroy'), post, :confirm => t('application.messages.are_you_sure'), :method => :delete
