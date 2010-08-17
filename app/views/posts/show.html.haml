@@ -2,3 +2,12 @@
   = link_to t('application.actions.back'), posts_path
 
 = render :partial => 'posts/post', :locals => {:post => @post}
+
+%h4= t('application.titles.comments')
+
+= render :partial => "comments/comment", :collection => @post.comments
+= render :partial => "comments/form", :locals => { :post => @post }
+  
+.postLinkBar
+  = link_to t('application.actions.edit'), edit_post_path(@post)
+  = link_to t('application.actions.destroy'), @post, :confirm => t('application.messages.are_you_sure'), :method => :delete
