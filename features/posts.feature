@@ -39,3 +39,17 @@ Feature: Create Posts
       And I should see "New Post Title"
       And I should see "New Post Content"
       And I should be on the post named "new_post_title" page
+
+	Scenario: User can show a particular post
+		Given the following posts
+			|name 		|title 				|content 				|
+			|post_1 	|Test Post 		|Test Content 	|
+		
+		 When I go to the post named "post_1" page
+      And I fill in "commenter" with "kandalf"
+      And I fill in "comment" with "Some comment"
+      And I click the "Create Comment" action in the current locale
+     Then I should be on the post named "post_1" page
+      And I should see the "Comment Created OK" message in the current locale
+      And I should see "kandalf"
+      And I should see "Some comment"

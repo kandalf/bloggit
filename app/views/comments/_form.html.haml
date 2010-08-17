@@ -1,0 +1,16 @@
+.commentFormWrapper
+  %h4= t('application.titles.add_comment')
+  =form_for([post, post.comments.build]) do |f|
+
+    .field
+      = f.label :commenter, t('application.titles.commenter')
+      %br
+      = f.text_field :commenter, :id => "commenter"
+
+    .field
+      = f.label :body, t('application.titles.comment_body')
+      %br
+      = f.text_area :body, :id => "comment", :rows => "10", :cols => "60"
+
+    .actions
+      = f.submit t('application.actions.create_comment')

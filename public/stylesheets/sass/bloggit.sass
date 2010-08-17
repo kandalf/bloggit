@@ -111,12 +111,15 @@ div
     width: !content_width
 
     .post
-      padding: 10px
+      padding: 10px 0px 20px 10px
+      a
+        text-decoration: none
+
       dl
         dt
           font-size: !post_title_font_size
           font-weight: bold
-          padding-bottom: 5px
+          padding-bottom: 15px
         
         dd
           padding-left: 20px
@@ -142,3 +145,17 @@ div
 .formWrapper
   padding: 10px 0px 5px 30px
 
+.commentFormWrapper
+  :padding 15px 0px 5px 5px
+
+.actions
+  input[type='button'], input[type='submit'], button
+    padding: 8px
+    color: white
+    background-color: #5B5B5B
+    text-shadow: -1px -1px 0 #333333
+    border: none
+    +border_radius(5px)
+    font-size: 12px
+    font-weight: bold
+    cursor: pointer

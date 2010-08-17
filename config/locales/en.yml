@@ -12,6 +12,11 @@ en:
       actions: Actions
       search: Search
       recent_posts: Recent Posts
+      add_comment: Add a Comment
+      commenter: Name
+      comment_body: Comment
+      comments: Comments
+      comment: Comment
 
     actions:
       show: Show
@@ -19,6 +24,7 @@ en:
       destroy: Destroy
       create: Create
       back: Back
+      create_comment: Create Comment
 
     messages:
       no_posts: BloggIT is waiting for YOU to be the first one to post!!<br/>Go Ahead! Write your first post and make yourself famous!!!
@@ -26,3 +32,4 @@ en:
       copyright: AtoBiz 2010 &copy;
       post_created_ok: Post was created successfuly
       are_you_sure: Are you sure?
+      comment_created_ok: Comment was created successfully
