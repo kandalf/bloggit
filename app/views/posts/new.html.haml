@@ -1,3 +1,14 @@
-%h1= t '.title'
-%p= link_to t('back'), posts_path
-= render 'form'
+%h1= t 'application.titles.new_post'
+%br
+%p= link_to t('application.actions.back'), posts_path
+
+.formWrapper
+  = form_for(@post) do |f|
+    - if @post.errors.any?
+      = render :partial => 'shared/errors', :locals => { :object => @post}
+    = render :partial => 'posts/form', :locals => { :f => f }
+
+    .actions
+      = f.submit t('application.actions.create')
+
+%p= link_to t('application.actions.back'), posts_path
