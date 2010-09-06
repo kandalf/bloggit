@@ -23,9 +23,10 @@ Feature: Create Posts
 			|post_1 	|Test Post 		|Test Content 	|
 			|post_2 	|Second Post	|Second Content |
 		
-		 When I go to the "post_1" page
+		 When I go to the post named "post_1" page
 		 Then I should see "Test Post"
 		  And I should see "Test Content"
 			And I should not see "Second Post"
 			And I should not see "Second Content"
+  
 

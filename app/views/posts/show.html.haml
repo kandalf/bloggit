@@ -1,6 +1,6 @@
-%h1= t '.title'
+%h1= @post.title
 %p
   = link_to t('application.actions.back'), posts_path
   = link_to t('application.actions.edit'), edit_post_path(@post)
 
-= render :partial => 'posts/post'
+= render :partial => 'posts/post', :locals => { :post => @post }
