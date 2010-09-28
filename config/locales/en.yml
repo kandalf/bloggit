@@ -24,6 +24,7 @@ en:
       destroy: Destroy
       create: Create
       back: Back
+      cancel: Cancel
       create_comment: Create Comment
 
     messages:
