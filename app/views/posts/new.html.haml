@@ -1,6 +1,6 @@
 %h1= t 'application.titles.new_post'
 %br
-%p= link_to t('application.actions.back'), posts_path
+-#%p= link_to t('application.actions.back'), posts_path
 
 .formWrapper
   = form_for(@post) do |f|
@@ -10,5 +10,6 @@
 
     .actions
       = f.submit t('application.actions.create')
+      = link_to t('application.actions.cancel'), posts_path
 
 %p= link_to t('application.actions.back'), posts_path
