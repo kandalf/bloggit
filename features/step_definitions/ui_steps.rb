@@ -8,5 +8,5 @@ When /^I click the "([^"]*)" action in the current locale$/ do |action|
   locale_action = I18n.translate("application.actions.#{action.downcase.gsub(" ", "_")}")
   locale_action.should_not include "translation missing:"
 
-  click locale_action
+  click_link_or_button locale_action
 end

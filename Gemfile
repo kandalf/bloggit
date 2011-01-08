@@ -29,8 +29,8 @@ gem 'haml'
 # put test-only gems in this group so their generators
 # and rake tasks are available in development mode:
  group :development, :test do
-  gem 'webrat'
-  #gem 'capybara'
+  #gem 'webrat'
+  gem 'capybara'
   gem 'database_cleaner'
   gem 'cucumber-rails'
   gem 'cucumber'
