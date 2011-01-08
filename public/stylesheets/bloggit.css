@@ -1,0 +1,144 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  background-color: white;
+  color: #333333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px; }
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px; }
+
+pre {
+  background-color: #eeeeee;
+  padding: 10px;
+  font-size: 11px; }
+
+a {
+  color: black; }
+  a:visited {
+    color: #666666; }
+  a:hover {
+    color: white;
+    background-color: black; }
+
+div.field, div.actions {
+  margin-bottom: 10px; }
+
+#notice {
+  color: green; }
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table; }
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0; }
+  #error_explanation h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #cc0000;
+    color: white; }
+  #error_explanation ul li {
+    font-size: 12px;
+    list-style: square; }
+
+#searchBar {
+  height: 20px;
+  text-align: right;
+  padding: 10px 15px 5px 0px;
+  font-size: 10px; }
+  #searchBar input[type='text'] {
+    border: solid 1px black; }
+  #searchBar * {
+    display: inline-block; }
+
+#header {
+  height: 80px;
+  background-color: black;
+  color: white;
+  padding: 10px; }
+  #header .vSpacer {
+    height: 70%; }
+  #header .title, #header .message {
+    height: 30%;
+    vertical-align: bottom;
+    display: inline-block;
+    font-weight: bold; }
+  #header .title {
+    font-size: 30px; }
+  #header .message {
+    font-size: 14px; }
+
+#contentWrapper {
+  padding: 25px 5px 5px 10px;
+  height: 100%;
+  display: block; }
+  #contentWrapper #content, #contentWrapper #sideBar {
+    display: inline-block; }
+  #contentWrapper #sideBar {
+    width: 18%;
+    vertical-align: top; }
+  #contentWrapper #content {
+    width: 80%; }
+    #contentWrapper #content .post {
+      padding: 10px 0px 20px 10px; }
+      #contentWrapper #content .post a {
+        text-decoration: none; }
+      #contentWrapper #content .post dl dt {
+        font-size: 26px;
+        font-weight: bold;
+        padding-bottom: 15px; }
+      #contentWrapper #content .post dl dd {
+        padding-left: 20px;
+        color: gray;
+        font-style: italic;
+        font-size: 14px; }
+
+#footer {
+  height: 50px;
+  background-color: black;
+  color: white;
+  font-size: 10px; }
+
+.field input[type='text'], .field input[type='password'], .field textarea {
+  background-color: white;
+  color: black;
+  border: solid 2px gray;
+  line-height: 18px;
+  font-size: 18px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px; }
+
+.formWrapper {
+  padding: 10px 0px 5px 30px; }
+
+.commentFormWrapper {
+  padding: 15px 0px 5px 5px; }
+
+.actions input[type='button'], .actions input[type='submit'], .actions button {
+  padding: 8px;
+  color: white;
+  background-color: #5b5b5b;
+  text-shadow: -1px -1px 0 #333333;
+  border: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer; }
