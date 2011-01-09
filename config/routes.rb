@@ -8,6 +8,8 @@ Bloggit::Application.routes.draw do
   end
 
   get "home/index"
+  match 'login' => 'user_sessions/new'
+  match 'logout' => 'user_sessions/destroy'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
