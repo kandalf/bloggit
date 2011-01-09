@@ -1,6 +1,8 @@
 Bloggit::Application.routes.draw do
-  resource :user_sessions
 
+  resource :user_sessions
+  
+  resources :users
   resources :posts do
     resources :comments
   end
