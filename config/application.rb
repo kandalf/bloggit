@@ -37,12 +37,12 @@ module Bloggit
     config.encoding = "utf-8"
 
     # Configure sensitive parameters which will be filtered from the log file.
-    config.filter_parameters += [:password]
+    config.filter_parameters += [:password, :password_confirmation]
     
     config.generators do |g|
       g.template_engine :haml
     end
 
-    config.action_view.javascript_expansions[:defaults] = %w(jquery-1.4.2.min rails application)
+    config.action_view.javascript_expansions[:defaults] = %w(jquery-1.4.3.min rails application)
   end
 end

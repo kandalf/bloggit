@@ -10,6 +10,7 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 # Use unicorn as the web server
 gem 'unicorn'
 #gem "mongrel", '1.2.0.pre2'
+gem 'authlogic'
 
 # Deploy with Capistrano
 # gem 'capistrano'
@@ -24,6 +25,8 @@ gem 'ruby-debug19', :require => 'ruby-debug'
 # gem 'aws-s3', :require => 'aws/s3'
 
 gem 'haml'
+gem 'haml-rails'
+gem 'jquery-rails'
 
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
