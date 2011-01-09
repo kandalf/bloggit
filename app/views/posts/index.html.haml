@@ -1,9 +1,10 @@
-%p= link_to t('application.titles.new_post'), new_post_path
-.post
+%p
+  .actions
+    =link_to t('application.titles.new_post'), new_post_path, :class => :button
+
+#posts
   - if @posts.any?
     = render :partial => "posts/post", :collection => @posts
   -else
     = render :partial => "shared/no_posts"
-
-%p= link_to t('application.titles.new_post'), new_post_path
 

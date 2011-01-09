@@ -97,18 +97,36 @@ div.field, div.actions {
   #contentWrapper #content {
     width: 80%; }
     #contentWrapper #content .post {
-      padding: 10px 0px 20px 10px; }
+      padding: 10px 0px 20px 10px;
+      width: 70%;
+      text-align: left;
+      position: relative;
+      left: 20%; }
       #contentWrapper #content .post a {
         text-decoration: none; }
-      #contentWrapper #content .post dl dt {
+      #contentWrapper #content .post .title {
         font-size: 26px;
         font-weight: bold;
         padding-bottom: 15px; }
-      #contentWrapper #content .post dl dd {
+        #contentWrapper #content .post .title * a {
+          color: #4b7fce; }
+      #contentWrapper #content .post .content {
         padding-left: 20px;
         color: gray;
         font-style: italic;
         font-size: 14px; }
+        #contentWrapper #content .post .content h1 {
+          font-size: 1.7em; }
+        #contentWrapper #content .post .content h2 {
+          font-size: 1.6em; }
+        #contentWrapper #content .post .content h3 {
+          font-size: 1.5em; }
+        #contentWrapper #content .post .content h4 {
+          font-size: 1.4em; }
+        #contentWrapper #content .post .content h5 {
+          font-size: 1.3em; }
+        #contentWrapper #content .post .content h6 {
+          font-size: 1.2em; }
 
 #footer {
   height: 50px;
@@ -131,7 +149,7 @@ div.field, div.actions {
 .commentFormWrapper {
   padding: 15px 0px 5px 5px; }
 
-.actions input[type='button'], .actions input[type='submit'], .actions button {
+.actions input[type='button'], .actions input[type='submit'], .actions button, .actions a.button {
   padding: 8px;
   color: white;
   background-color: #5b5b5b;
@@ -142,3 +160,5 @@ div.field, div.actions {
   font-size: 12px;
   font-weight: bold;
   cursor: pointer; }
+.actions a.button {
+  text-decoration: none; }

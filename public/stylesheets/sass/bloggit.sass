@@ -111,21 +111,41 @@ div
     width: !content_width
 
     .post
-      padding: 10px 0px 20px 10px
+      :padding 10px 0px 20px 10px
+      :width !post_box_width
+      :text-align left
+      :position relative
+      :left 20%
+
       a
         text-decoration: none
 
-      dl
-        dt
-          font-size: !post_title_font_size
-          font-weight: bold
-          padding-bottom: 15px
+      .title
+        font-size: !post_title_font_size
+        font-weight: bold
+        padding-bottom: 15px
+        *
+          a
+            color: !post_title_color
+      
+      .content
+        h1
+          :font-size 1.7em
+        h2
+          :font-size 1.6em
+        h3
+          :font-size 1.5em
+        h4
+          :font-size 1.4em
+        h5
+          :font-size 1.3em
+        h6
+          :font-size 1.2em
         
-        dd
-          padding-left: 20px
-          color: !post_content_color
-          font-style: italic
-          font-size: !post_content_font_size
+        padding-left: 20px
+        color: !post_content_color
+        font-style: italic
+        font-size: !post_content_font_size
 
 #footer
   height: 50px
@@ -149,7 +169,7 @@ div
   :padding 15px 0px 5px 5px
 
 .actions
-  input[type='button'], input[type='submit'], button
+  input[type='button'], input[type='submit'], button, a.button
     padding: 8px
     color: white
     background-color: #5B5B5B
@@ -159,3 +179,6 @@ div
     font-size: 12px
     font-weight: bold
     cursor: pointer
+
+  a.button
+    :text-decoration none

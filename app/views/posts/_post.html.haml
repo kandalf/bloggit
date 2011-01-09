@@ -1,5 +1,8 @@
 .post
-  %dl
-    %dt= link_to post.title, post_path(post)
-    %dd=raw post.content
+  .author
+    
+  .title
+    %h4= link_to post.title, post_path(post)
+  .content
+    =raw post.content
 

@@ -9,6 +9,7 @@ en:
 
     titles:
       new_post: New Post
+      edit_post: Edit Post
       actions: Actions
       search: Search
       recent_posts: Recent Posts
@@ -19,6 +20,7 @@ en:
       comment: Comment
 
     actions:
+      save: Save
       show: Show
       edit: Edit
       destroy: Destroy
