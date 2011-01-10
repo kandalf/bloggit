@@ -1,6 +1,8 @@
 Bloggit::Application.routes.draw do
 
-  resource :user_sessions
+  resource :user_session
+  match 'login' => 'user_sessions#new', :as => :login
+  match 'logout' => 'user_sessions#destroy', :as => :logout
   
   resources :users
   resources :posts do
@@ -8,8 +10,6 @@ Bloggit::Application.routes.draw do
   end
 
   get "home/index"
-  match 'login' => 'user_sessions/new'
-  match 'logout' => 'user_sessions/destroy'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

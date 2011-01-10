@@ -28,6 +28,7 @@ en:
       back: Back
       cancel: Cancel
       create_comment: Create Comment
+      login: Login
 
     messages:
       no_posts: BloggIT is waiting for YOU to be the first one to post!!<br/>Go Ahead! Write your first post and make yourself famous!!!

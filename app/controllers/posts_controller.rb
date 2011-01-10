@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  skip_before_filter :require_user, :only => [:index, :show]
+
   # GET /posts
   # GET /posts.xml
   def index
