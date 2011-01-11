@@ -21,4 +21,13 @@ describe Post do
     post = Post.new(:title => "title", :name => "something")
     post.comments.should be_empty
   end
+
+  it "should belong to a user" do
+    user = Summoner.summon :user
+
+    post = Summoner.summon(:post, :owner_id => user.id)
+
+    post.should be_valid
+    post.owner.should == user
+  end
 end

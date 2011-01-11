@@ -4,4 +4,5 @@ class Post < ActiveRecord::Base
                     :length => { :minimum => 5 }
 
   has_many :comments
+  belongs_to :owner, :class_name => "User"
 end
